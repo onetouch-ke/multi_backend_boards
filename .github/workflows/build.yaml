@@ -36,12 +36,3 @@ jobs:
         IMAGE=$ECR_REGISTRY/multi-backend-boards:${TAG}
         docker build -t $IMAGE -f boards/Dockerfile ./boards
         docker push $IMAGE
-
-    - name: Build and Push users-service
-      env:
-        TAG: ${{ github.run_number }}
-        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-      run: |
-        IMAGE=$ECR_REGISTRY/multi-backend-users:${TAG}
-        docker build -t $IMAGE -f users/Dockerfile ./users
-        docker push $IMAGE
