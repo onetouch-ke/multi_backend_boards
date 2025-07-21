@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:mariadb://msa-mariadb-rds20250721022536253700000001.cxca0yecyzdl.ap-northeast-2.rds.amazonaws.com:3306/BoardsService
     username: MSA_User
-    password: P@ssw0rd
+    password: Passw0rd
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
