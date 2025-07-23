@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mariadb://msa-mariadb-rds2025072301433588140000000c.cxca0yecyzdl.ap-northeast-2.rds.amazonaws.com:3306/BoardsService
+    url: jdbc:mariadb://msa-mariadb-rds.cxca0yecyzdl.ap-northeast-2.rds.amazonaws.com:3306/BoardsService
     username: MSA_User
     password: Passw0rd
     driver-class-name: org.mariadb.jdbc.Driver
